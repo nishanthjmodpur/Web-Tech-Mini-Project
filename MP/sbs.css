@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url(std.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;    
+}
+
+.welcome-dialogue {
+    background-color: #568ee8;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-dialogue h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.options-dialogue {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 250px;
+}
+
+.options-dialogue h2 {
+    color: white;
+    font-size: 24px;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 100px;
+}
+
+.button {
+    background-color: #fff;
+    color: #568ee8;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #568ee8;
+    color: white;
+}

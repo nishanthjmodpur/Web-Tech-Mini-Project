@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Any</title>
+    <link rel="stylesheet" type="text/css" href="css/redirectionStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/6313f9fa86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      type = "text/javascript";
+      src = "http://code.jquery.com/jquery-latest.min.js";
+    </script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="formbox">
+        <h1 id="title">What would you like to do today?</h1>
+        <form>
+          <div class="btn-field">
+            <button type="button" id="selectDir">
+              <h2>Cricket Directory</h2>
+              <br />
+              <i class="fa-solid fa-book-open fa-beat-fade fa-lg"></i>
+            </button>
+            <button type="button" id="selectBs" class="disable">
+              <h2>Book Tickets</h2>
+              <br />
+              <i class="fa-solid fa-ticket fa-beat-fade fa-lg"></i>
+            </button>
+          </div>
+          <br /><br />
+          <div class="btn">
+            <button type="button" id="selectGo">
+              <h2>Go</h2>
+              <br />
+              <i class="fa-solid fa-arrow-right fa-beat-fade fa-lg"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+      let selectDir = document.getElementById("selectDir");
+      let selectBs = document.getElementById("selectBs");
+      let title = document.getElementById("title");
+
+      selectDir.onclick = function () {
+        title.innerHTML = "Proceed to Cricket Directory";
+        selectBs.classList.add("disable");
+        selectDir.classList.remove("disable");
+
+        document.getElementById("selectGo").addEventListener("click", function () {
+          window.location.href = "http://localhost:3000/"; // Replace with the URL of your Cricket Directory React app
+        });
+      };
+      selectBs.onclick = function () {
+        title.innerHTML = "Proceed to Book Tickets";
+        selectDir.classList.add("disable");
+        selectBs.classList.remove("disable");
+
+        document.getElementById("selectGo").addEventListener("click", function () {
+          window.location.href = "file:///home/nishanth/Public/college/wt/CricketDirectory/CricketDirectory/MP/bt.html"; // Replace with the URL of your Book Tickets React app
+        });
+      };
+    </script>
+  </body>
+</html>

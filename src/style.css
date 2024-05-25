@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  height: 100px;
+  justify-content: space-between;
+  padding: 30px 25px;
+}
+
+a,
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+h3 {
+  background-color: #21222a;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.cta {
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+  height: 75px;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button :hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+#currentSeries, #currentMatches, #playerStats, #recentResults {
+    cursor: pointer;
+}
+
+li, a, button {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  background-color: #24252A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.cta {
+  background-color: #24252A;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+  background-color: #24252A;
+}
+
+.nav__links li {
+  display: inline;
+  padding: 0px 20px;
+  background-color: #24252A;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  background-color: #24252A;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.feedback-form {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.feedback-form fieldset {
+  border: 2px solid #0088a9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.feedback-form legend {
+  font-weight: bold;
+  color: #0088a9;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  color: #24252A;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form button {
+  background-color: #0088a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #006c84;
+}
+
+.match-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.team-names {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.series-name {
+  text-align: center;
+  font-size: 22px;
+}
+
+.match-status {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Add this CSS to your stylesheet */
+.news-item {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.news-item p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #666;
+}
+
+.series-month {
+  margin: 20px;
+}
+
+.series-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.series-item p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.match-schedule {
+  margin: 20px;
+}
+
+.match-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.match-item p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* styles.css */
+
+.player-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.player-heading {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.player-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+}
+
+.player-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Add more CSS styles as needed to make the content attractive */

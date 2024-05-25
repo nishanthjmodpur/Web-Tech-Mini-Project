@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Main from "./container/Main"
+import Navbar from "./container/Navbar"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedPage: 'default', // Initial selected page
+    };
+  }
+
+  handlePageChange = (page) => {
+    this.setState({ selectedPage: page });
+  };
+
+  render() {
+    return (
+      <div>
+        <Navbar onPageChange={this.handlePageChange} />
+        <Main selectedPage={this.state.selectedPage} />
+      </div>
+    );
+  }
 }
 
 export default App;

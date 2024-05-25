@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="sbs.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <title>Stadium Seat Booking System</title>
+    </head>
+
+    <body>
+        <div class="welcome-dialogue">
+            <h1>Welcome to the Seat Booking System</h1>
+        </div>
+        
+        <div class="options-dialogue">
+            <h2>What would you like to do today?</h2>
+            <div id="options">
+                <button class="button" onclick="viewSchedule()">View Schedule</button>
+                <button class="button" onclick="window.location.href = 'bt.html';">Book Tickets</button>
+            </div>
+        </div>
+
+        <script>
+            function viewSchedule() {
+                var schedule = 'sch.jpeg';
+                window.location.href = schedule;
+            }
+        </script>
+    </body>
+</html>
